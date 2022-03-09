@@ -1,3 +1,26 @@
 <resources>
     <string translatable="true" name="app_name">Calculator</string>
+    <string name="zero" translatable="true">0</string>
+    <string name="one" translatable="true">1</string>
+    <string name="two" translatable="true">2</string>
+    <string name="three" translatable="true">3</string>
+    <string name="four" translatable="true">4</string>
+    <string name="five" translatable="true">5</string>
+    <string name="six" translatable="true">6</string>
+    <string name="seven" translatable="true">7</string>
+    <string name="eight" translatable="true">8</string>
+    <string name="nine" translatable="true">9</string>
+    <string name="clear" translatable="true">C</string>
+    <string name="exponent" translatable="true">^</string>
+    <string name="parentheses" translatable="true">( )</string>
+    <string name="division" translatable="true">÷</string>
+    <string name="multiplication" translatable="true">×</string>
+    <string name="subtraction" translatable="true">−</string>
+    <string name="summation" translatable="true">+</string>
+    <string name="plusMinus" translatable="true">±</string>
+    <string name="decimalSeparator" translatable="true">.</string>
+    <string name="equals" translatable="true">=</string>
+    <string name="backspace" translatable="true"> </string>
+    <string name="textview" translatable="false"> </string>
+    <string name="backspaceContentDesk">backspace icon</string>
 </resources>
