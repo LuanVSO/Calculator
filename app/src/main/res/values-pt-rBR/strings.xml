@@ -18,7 +18,6 @@
     <string name="multiplication">×</string>
     <string name="subtraction">−</string>
     <string name="summation">+</string>
-    <string name="plusMinus">±</string>
     <string name="decimalSeparator">,</string>
     <string name="equals">=</string>
     <string name="backspace">" "</string>

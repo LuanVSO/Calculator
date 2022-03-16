@@ -17,7 +17,6 @@
     <string name="multiplication" translatable="true">×</string>
     <string name="subtraction" translatable="true">−</string>
     <string name="summation" translatable="true">+</string>
-    <string name="plusMinus" translatable="true">±</string>
     <string name="decimalSeparator" translatable="true">.</string>
     <string name="equals" translatable="true">=</string>
     <string name="backspace" translatable="true"> </string>
