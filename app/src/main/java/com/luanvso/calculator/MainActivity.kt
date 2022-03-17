@@ -1,9 +1,9 @@
 package com.luanvso.calculator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import org.mariuszgromada.math.mxparser.*
 
 class MainActivity : AppCompatActivity() {
@@ -60,9 +60,16 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.bEquals)
             .setOnClickListener {
                 val str:String = display.text.toString()
-                    .replace(getString(R.string.decimalSeparator),".")
-                    .replace(getString(R.string.multiplication),"*")
-                    .replace(getString(R.string.division),"/")
+                    .replace(Regex(
+                    "[${getString(R.string.decimalSeparator)}${getString(R.string.multiplication)}${getString(R.string.division)}]")
+                    ) { matchResult: MatchResult ->
+                        when (matchResult.value) {
+                            getString(R.string.decimalSeparator) -> "."
+                            getString(R.string.multiplication) -> "*"
+                            getString(R.string.division) -> "/"
+                            else -> ""
+                        }
+                    }
                 val exp = Expression(str)
                 display.setText(exp.calculate().toString().replace(".",getString(R.string.decimalSeparator)))
                 display.setSelection(display.length())
